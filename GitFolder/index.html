@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Vétérinaire Champel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cabinet Vétérinaire Champel</h1>
+    <nav>
+      <a href="#hero">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div id="hero">
+    <h2>Bienvenue au Cabinet Vétérinaire Champel</h2>
+    <p>Situé au cœur du quartier Champel à Genève.</p>
+    <ul>
+      <li>Vaccination</li>
+      <li>Bilan de santé</li>
+      <li>2 vétérinaires expérimentés</li>
+      <li>Disponibilité</li>
+      <li>Chirurgie</li>
+      <li>Soins dentaires</li>
+      <li>Dermatologie</li>
+      <li>Prévention</li>
+    </ul>
+  </div>
+  <img src="hero.jpg" alt="Cabinet vétérinaire Champel accueil" loading="lazy">
+
+  <!-- Services Section -->
+  <div id="services">
+    <h3>Nos services</h3>
+    <h4>Consultations et soins courants</h4>
+    <p>Consultation de base, examen de santé, diagnostic des maladies, suivi des pathologies chroniques, conseils aux propriétaires.</p>
+
+    <h4>Vaccination et prévention</h4>
+    <p>Administration des vaccins, traitements antiparasitaires, bilans de santé.</p>
+
+    <h4>Chirurgie et soins dentaires</h4>
+    <p>Stérilisation, chirurgies de convenance, soins et extractions dentaires, prise en charge des accidents, blessures, morsures etc.</p>
+
+    <h4>Urgences</h4>
+    <p>Nous assurons les urgences de nos clients pendant les heures ouvrables. Dehors nos heures d'ouverture, un collaborateur expérimenté vous accompagnera en fonction de votre urgence.</p>
+  </div>
+  <img src="services.jpg" alt="Services vétérinaires" loading="lazy">
+
+  <!-- About Section -->
+  <div id="about">
+    <h3>À propos de notre cabinet vétérinaire</h3>
+    <p>Le Cabinet Vétérinaire Champel est créé par deux vétérinaires expérimentés, unis par leur passion pour les animaux et leur envie d'offrir des soins de qualité dans un cadre de proximité.</p>
+
+    <h4>Notre expérience</h4>
+    <p>Nos vétérinaires exercent leur profession depuis 20 ans. Dans notre cabinet, vous pouvez compter sur cette expérience pour le bien‑être de votre animal. Rejoignez notre équipe de clients et d'animaux satisfaits.</p>
+
+    <h4>Notre mission</h4>
+    <p>Offrir des services vétérinaires complets et personnalisés pour répondre aux besoins des animaux de compagnie du quartier de Champel, tout en garantissant la tranquillité d’esprit de leurs propriétaires.</p>
+
+    <h4>Pourquoi nous choisir ?</h4>
+    <ul>
+      <li>Une localisation idéale au cœur de Champel à Genève</li>
+      <li>Une approche humaine et bienveillante envers chaque patient</li>
+      <li>Une expertise combinée de plusieurs années dans des domaines variés de la médecine vétérinaire</li>
+    </ul>
+
+    <p>Nous sommes convaincus que chaque animal mérite des soins adaptés et un suivi rigoureux pour vivre en pleine santé. Faites confiance à notre équipe dévouée pour prendre soin de votre compagnon à quatre pattes.</p>
+  </div>
+  <img src="about.jpg" alt="Notre équipe vétérinaire" loading="lazy">
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <h3>Contactez‑nous</h3>
+    <p>
+      Cabinet Vétérinaire Champel<br>
+      Rue Pédro‑Meylan 1<br>
+      1208 Genève
+    </p>
+    <p>TEL: 022 736 00 06</p>
+
+    <!-- Call-to-Action Button -->
+    <a href="tel:0227360006" class="button">Prendre rendez‑vous</a>
+    <a href="mailto:info@veterinaire-champel.ch" class="button">Envoyer un message</a>
+  </div>
+  <img src="contact.jpg" alt="Cabinet vétérinaire Champel contact" loading="lazy">
+
+  <!-- Back to Top Arrow -->
+  <a href="#hero" class="back-to-top">&#8679;</a>
+
+  <footer>
+    <p>&copy; 2025 Cabinet Vétérinaire Champel. Tous droits réservés.</p>
+  </footer>
+
+  <!-- JS for arrow visibility & sticky nav highlight -->
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      // Back to top arrow
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+
+      // Sticky nav highlight
+      let fromTop = window.scrollY + 100;
+      navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
