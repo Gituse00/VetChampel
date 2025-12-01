@@ -59,25 +59,17 @@ html {
 section {
   padding: 4rem 2rem;
   margin-top: 4rem;
+  scroll-margin-top: 100px; /* offset for fixed header */
 }
 #hero {
-  background: url('hero-bg.jpg') center/cover no-repeat; /* 🔹 background image */
+  background: url('hero-bg.jpg') center/cover no-repeat;
   color: #fff;
   position: relative;
   text-align: center;
 }
 .hero-overlay {
-  background: rgba(0, 105, 92, 0.6); /* 🔹 gradient overlay */
+  background: rgba(0, 105, 92, 0.6);
   padding: 4rem 2rem;
-}
-#services {
-  background: #f9f9f9;
-}
-#about {
-  background: #ffffff;
-}
-#contact {
-  background: #f1f8e9;
 }
 
 /* Lists */
@@ -91,4 +83,6 @@ ul {
 #hero li {
   display: inline-block;
   margin: 0.5rem;
-  background: rgba(0, 105, 92
+  background: rgba(0, 105, 92, 0.9); /* darker teal */
+  color: #fff;
+  padding: 
