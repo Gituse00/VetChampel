@@ -1,115 +1,119 @@
+/* 🔹 Import Google Fonts: Raleway (for headings) and Libre Baskerville (for body text) */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-/* Reset */
+/* 🔹 Reset default margins/padding for common elements */
 body, h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
 }
+
+/* 🔹 Base body styling */
 body {
-  font-family: 'Libre Baskerville', serif;
-  line-height: 1.6;
-  color: #333333;
-  background: #ffffff;
+  font-family: 'Libre Baskerville', serif; /* elegant serif for main text */
+  line-height: 1.6;                        /* comfortable spacing between lines */
+  color: #333333;                          /* dark grey text */
+  background: #ffffff;                     /* white background */
 }
 
-/* Headings */
+/* 🔹 Headings styling */
 h1, h2, h3, h4 {
-  font-family: 'Raleway', sans-serif;
-  color: #00695c;
+  font-family: 'Raleway', sans-serif;      /* clean sans-serif for headings */
+  color: #00695c;                          /* teal green color for headings */
 }
 
-/* Header & Navigation */
+/* 🔹 Header & Navigation bar */
 header {
-  background: #00695c;
-  color: #fff;
-  padding: 1rem;
-  position: fixed;
+  background: #00695c;                     /* teal background */
+  color: #fff;                             /* white text */
+  padding: 1rem;                           /* spacing inside header */
+  position: fixed;                         /* stays at top when scrolling */
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000;                           /* ensures header stays above other elements */
 }
 header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;                   /* small space below site title */
 }
 nav {
-  text-align: center;
+  text-align: center;                      /* center the nav links */
 }
 nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
+  color: #fff;                             /* white links */
+  text-decoration: none;                   /* remove underline */
+  margin: 0 1rem;                          /* spacing between links */
   font-weight: bold;
-  transition: color 0.3s, border-bottom 0.3s;
+  transition: color 0.3s, border-bottom 0.3s; /* smooth hover effect */
 }
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline;              /* underline on hover */
 }
 nav a.active {
-  border-bottom: 2px solid #f57c00;
-  color: #f57c00;
+  border-bottom: 2px solid #f57c00;        /* orange underline for active section */
+  color: #f57c00;                          /* orange text for active section */
 }
 
-/* Smooth scrolling */
+/* 🔹 Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
-/* Content blocks */
+/* 🔹 Content blocks (all div sections) */
 div {
-  padding: 4rem 2rem;
-  margin-top: 4rem;
+  padding: 4rem 2rem;                      /* spacing inside each section */
+  margin-top: 4rem;                        /* spacing above each section */
 }
 #hero {
-  background: #e0f2f1;
-  text-align: center;
+  background: #e0f2f1;                     /* light teal background */
+  text-align: center;                      /* center text in hero */
 }
 #services {
-  background: #f9f9f9;
+  background: #f9f9f9;                     /* light grey background */
 }
 #about {
-  background: #ffffff;
+  background: #ffffff;                     /* plain white background */
 }
 #contact {
-  background: #f1f8e9;
+  background: #f1f8e9;                     /* light green background */
 }
 
-/* Lists */
+/* 🔹 Lists */
 ul {
-  margin-left: 2rem;
+  margin-left: 2rem;                       /* indent lists */
 }
 #hero ul {
-  list-style: none;
+  list-style: none;                        /* remove bullets in hero list */
   padding: 0;
 }
 #hero li {
-  display: inline-block;
+  display: inline-block;                   /* list items side by side */
   margin: 0.5rem;
-  background: rgba(0, 105, 92, 0.7);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  background: rgba(0, 105, 92, 0.7);       /* semi-transparent teal background */
+  color: #fff;                             /* white text */
+  padding: 0.5rem 1rem;                    /* spacing inside each badge */
+  border-radius: 5px;                      /* rounded corners */
 }
 
-/* Images after each block */
+/* 🔹 Images after each block (hero, services, about, contact) */
 div + img {
   display: block;
-  max-width: 100%;
+  max-width: 100%;                         /* responsive images */
   height: auto;
-  margin: 2rem auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin: 2rem auto;                       /* centered with spacing */
+  border-radius: 8px;                      /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);   /* subtle shadow */
 }
 
-/* Back to Top Arrow */
+/* 🔹 Back to Top Arrow */
 .back-to-top {
-  position: fixed;
+  position: fixed;                         /* floats in bottom-right corner */
   bottom: 20px;
   right: 20px;
-  background: #00695c;
-  color: #fff;
-  font-size: 2rem;
+  background: #00695c;                     /* teal background */
+  color: #fff;                             /* white arrow */
+  font-size: 2rem;                         /* large arrow size */
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  opacity: 0.7;
+  border-radius: 50%;                      /* circular button */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);   /* shadow for depth */
+  opacity: 0.7;                            /* slightly transparent */
+}
