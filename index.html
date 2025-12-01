@@ -1,16 +1,17 @@
-html
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> <!-- 🔹 Document language set to French -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabinet Vétérinaire Champel</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- 🔹 Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 🔹 Responsive design -->
+  <title>Cabinet Vétérinaire Champel</title> <!-- 🔹 Page title -->
+  <link rel="stylesheet" href="style.css"> <!-- 🔹 External CSS file -->
 </head>
 <body>
+  <!-- 🔹 HEADER with site title and navigation -->
   <header>
     <h1>Cabinet Vétérinaire Champel</h1>
     <nav>
+      <!-- 🔹 Anchor links for smooth scrolling to sections -->
       <a href="#hero">Accueil</a>
       <a href="#services">Services</a>
       <a href="#about">À propos</a>
@@ -18,7 +19,7 @@ html
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- 🔹 HERO SECTION (intro + highlights list) -->
   <div id="hero">
     <h2>Bienvenue au Cabinet Vétérinaire Champel</h2>
     <p>Situé au cœur du quartier Champel à Genève.</p>
@@ -33,9 +34,9 @@ html
       <li>Prévention</li>
     </ul>
   </div>
-  <img src="hero.jpg" alt="Cabinet vétérinaire Champel accueil" loading="lazy">
+  <img src="hero.jpg" alt="Cabinet vétérinaire Champel accueil" loading="lazy"> <!-- 🔹 Hero image -->
 
-  <!-- Services Section -->
+  <!-- 🔹 SERVICES SECTION -->
   <div id="services">
     <h3>Nos services</h3>
     <h4>Consultations et soins courants</h4>
@@ -50,9 +51,9 @@ html
     <h4>Urgences</h4>
     <p>Nous assurons les urgences de nos clients pendant les heures ouvrables. Dehors nos heures d'ouverture, un collaborateur expérimenté vous accompagnera en fonction de votre urgence.</p>
   </div>
-  <img src="services.jpg" alt="Services vétérinaires" loading="lazy">
+  <img src="services.jpg" alt="Services vétérinaires" loading="lazy"> <!-- 🔹 Services image -->
 
-  <!-- About Section -->
+  <!-- 🔹 ABOUT SECTION -->
   <div id="about">
     <h3>À propos de notre cabinet vétérinaire</h3>
     <p>Le Cabinet Vétérinaire Champel est créé par deux vétérinaires expérimentés, unis par leur passion pour les animaux et leur envie d'offrir des soins de qualité dans un cadre de proximité.</p>
@@ -72,9 +73,9 @@ html
 
     <p>Nous sommes convaincus que chaque animal mérite des soins adaptés et un suivi rigoureux pour vivre en pleine santé. Faites confiance à notre équipe dévouée pour prendre soin de votre compagnon à quatre pattes.</p>
   </div>
-  <img src="about.jpg" alt="Notre équipe vétérinaire" loading="lazy">
+  <img src="about.jpg" alt="Notre équipe vétérinaire" loading="lazy"> <!-- 🔹 About image -->
 
-  <!-- Contact Section -->
+  <!-- 🔹 CONTACT SECTION -->
   <div id="contact">
     <h3>Contactez‑nous</h3>
     <p>
@@ -84,26 +85,27 @@ html
     </p>
     <p>TEL: 022 736 00 06</p>
 
-    <!-- Call-to-Action Button -->
+    <!-- 🔹 Call-to-Action Button (click-to-call) -->
     <a href="tel:0227360006" class="button">Prendre rendez‑vous</a>
   </div>
-  <img src="contact.jpg" alt="Cabinet vétérinaire Champel contact" loading="lazy">
+  <img src="contact.jpg" alt="Cabinet vétérinaire Champel contact" loading="lazy"> <!-- 🔹 Contact image -->
 
-  <!-- Back to Top Arrow -->
+  <!-- 🔹 BACK TO TOP ARROW -->
   <a href="#hero" class="back-to-top">&#8679;</a>
 
+  <!-- 🔹 FOOTER -->
   <footer>
     <p>&copy; 2025 Cabinet Vétérinaire Champel. Tous droits réservés.</p>
   </footer>
 
-  <!-- Optional JS for arrow visibility -->
+  <!-- 🔹 OPTIONAL JS for arrow visibility -->
   <script>
     const backToTop = document.querySelector('.back-to-top');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
+        backToTop.style.display = 'block'; // 🔹 Show arrow after scrolling down
       } else {
-        backToTop.style.display = 'none';
+        backToTop.style.display = 'none';  // 🔹 Hide arrow near top
       }
     });
   </script>
