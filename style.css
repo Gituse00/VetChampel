@@ -1,147 +1,115 @@
-/* 🔹 RESET GENERAL */
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Reset */
+body, h1, h2, h3, h4, p, ul {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+}
+body {
+  font-family: 'Libre Baskerville', serif;
   line-height: 1.6;
-  background-color: #fafafa; /* light background for readability */
-  color: #333;               /* default text color */
+  color: #333333;
+  background: #ffffff;
 }
 
-/* 🔹 HEADER + NAVIGATION */
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  color: #00695c;
+}
+
+/* Header & Navigation */
 header {
-  background: #0077cc;       /* clinic blue */
+  background: #00695c;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 header h1 {
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 nav {
-  margin-top: 10px;
+  text-align: center;
 }
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 1rem;
   font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 nav a:hover {
   text-decoration: underline;
 }
-
-/* 🔹 HERO SECTION */
-#hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: #e6f2ff;       /* soft blue background */
+nav a.active {
+  border-bottom: 2px solid #f57c00;
+  color: #f57c00;
 }
-#hero h2 {
-  margin-top: 0;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Content blocks */
+div {
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+}
+#hero {
+  background: #e0f2f1;
+  text-align: center;
+}
+#services {
+  background: #f9f9f9;
+}
+#about {
+  background: #ffffff;
+}
+#contact {
+  background: #f1f8e9;
+}
+
+/* Lists */
+ul {
+  margin-left: 2rem;
 }
 #hero ul {
-  list-style: none;          /* remove bullets */
+  list-style: none;
   padding: 0;
 }
 #hero li {
-  margin: 5px 0;
-}
-#hero + img {
-  width: 100%;               /* hero image full width */
-  height: auto;
-  display: block;
-}
-
-/* 🔹 SERVICES SECTION */
-#services {
-  padding: 40px 20px;
-  background: #fff;
-}
-#services h3 {
-  color: #0077cc;
-}
-#services h4 {
-  margin-top: 20px;
-  color: #444;
-}
-#services + img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 🔹 ABOUT SECTION */
-#about {
-  padding: 40px 20px;
-  background: #f9f9f9;
-}
-#about h3 {
-  color: #0077cc;
-}
-#about h4 {
-  margin-top: 20px;
-  color: #444;
-}
-#about ul {
-  list-style: disc;
-  margin: 10px auto;
-  max-width: 600px;
-  text-align: left;
-}
-#about + img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 🔹 CONTACT SECTION */
-#contact {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-}
-#contact h3 {
-  color: #0077cc;
-}
-#contact .button {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #0077cc;
+  margin: 0.5rem;
+  background: rgba(0, 105, 92, 0.7);
   color: #fff;
-  text-decoration: none;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
 }
-#contact .button:hover {
-  background: #005fa3;
-}
-#contact + img {
-  width: 100%;
-  height: auto;
+
+/* Images after each block */
+div + img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* 🔹 BACK TO TOP ARROW */
+/* Back to Top Arrow */
 .back-to-top {
-  position: fixed;           /* floats in corner */
+  position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #0077cc;
+  background: #00695c;
   color: #fff;
-  padding: 10px 15px;
-  border-radius: 50%;
+  font-size: 2rem;
   text-decoration: none;
-  font-size: 20px;
-  display: none;             /* hidden until JS shows it */
-}
-.back-to-top:hover {
-  background: #005fa3;
-}
-
-/* 🔹 FOOTER */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-}
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  opacity: 0.7;
