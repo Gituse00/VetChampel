@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -85,7 +86,6 @@
 
     <!-- Call-to-Action Button -->
     <a href="tel:0227360006" class="button">Prendre rendez‑vous</a>
-    <a href="mailto:info@veterinaire-champel.ch" class="button">Envoyer un message</a>
   </div>
   <img src="contact.jpg" alt="Cabinet vétérinaire Champel contact" loading="lazy">
 
@@ -96,32 +96,15 @@
     <p>&copy; 2025 Cabinet Vétérinaire Champel. Tous droits réservés.</p>
   </footer>
 
-  <!-- JS for arrow visibility & sticky nav highlight -->
+  <!-- Optional JS for arrow visibility -->
   <script>
     const backToTop = document.querySelector('.back-to-top');
-    const navLinks = document.querySelectorAll('nav a');
-
     window.addEventListener('scroll', () => {
-      // Back to top arrow
       if (window.scrollY > 300) {
         backToTop.style.display = 'block';
       } else {
         backToTop.style.display = 'none';
       }
-
-      // Sticky nav highlight
-      let fromTop = window.scrollY + 100;
-      navLinks.forEach(link => {
-        const section = document.querySelector(link.getAttribute('href'));
-        if (
-          section.offsetTop <= fromTop &&
-          section.offsetTop + section.offsetHeight > fromTop
-        ) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
     });
   </script>
 </body>
