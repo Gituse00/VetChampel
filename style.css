@@ -1,20 +1,20 @@
-/* 🔹 Import Google Fonts */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
 /* Reset */
-body, h1, h2, h3, h4, p, ul {
+body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
 body {
   font-family: 'Libre Baskerville', serif;
   line-height: 1.6;
-  color: #333333;
-  background: #ffffff;
+  color: #333;
+  background: #fff;
 }
 
 /* Headings */
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
   color: #00695c;
 }
@@ -55,14 +55,20 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Content blocks */
-div {
+/* Sections */
+section {
   padding: 4rem 2rem;
   margin-top: 4rem;
 }
 #hero {
-  background: #e0f2f1;
+  background: url('hero-bg.jpg') center/cover no-repeat; /* 🔹 background image */
+  color: #fff;
+  position: relative;
   text-align: center;
+}
+.hero-overlay {
+  background: rgba(0, 105, 92, 0.6); /* 🔹 gradient overlay */
+  padding: 4rem 2rem;
 }
 #services {
   background: #f9f9f9;
@@ -85,37 +91,4 @@ ul {
 #hero li {
   display: inline-block;
   margin: 0.5rem;
-  background: rgba(0, 105, 92, 0.7);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-}
-
-/* Images after each block */
-div + img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-/* Call-to-Action Button */
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #00695c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-.button:hover {
-  background: #004d40;
-}
-
-/* Back to Top Arrow */
-.back-to-top {
-  position: fixed;
+  background: rgba(0, 105, 92
