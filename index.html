@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabinet Vétérinaire Champel</title>
 
-  <!-- 🔹 SEO Meta Description -->
+  <!-- SEO Meta Description -->
   <meta name="description" content="Clinique vétérinaire à Champel, Genève. Consultations, chirurgie, urgences, soins dentaires.">
 
-  <!-- 🔹 Open Graph Tags for Social Sharing -->
+  <!-- Open Graph Tags -->
   <meta property="og:title" content="Cabinet Vétérinaire Champel">
   <meta property="og:description" content="Clinique vétérinaire à Champel, Genève. Consultations, chirurgie, urgences, soins dentaires.">
-  <meta property="og:image" content="hero.jpg"> <!-- replace with final hero image -->
+  <meta property="og:image" content="hero.jpg">
   <meta property="og:url" content="https://vetchampel.ch">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 🔹 HEADER -->
+  <!-- HEADER -->
   <header>
     <h1>Cabinet Vétérinaire Champel</h1>
     <nav>
@@ -29,7 +29,7 @@
     </nav>
   </header>
 
-  <!-- 🔹 HERO SECTION -->
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-overlay">
       <h2>Bienvenue au Cabinet Vétérinaire Champel</h2>
@@ -45,9 +45,10 @@
         <li>Prévention</li>
       </ul>
     </div>
+    <img src="hero.jpg" alt="Cabinet vétérinaire Champel accueil" loading="lazy">
   </section>
 
-  <!-- 🔹 SERVICES SECTION -->
+  <!-- SERVICES -->
   <section id="services">
     <h2>Nos services</h2>
     <h3>Consultations et soins courants</h3>
@@ -61,9 +62,11 @@
 
     <h3>Urgences</h3>
     <p>Nous assurons les urgences de nos clients pendant les heures ouvrables. Dehors nos heures d'ouverture, un collaborateur expérimenté vous accompagnera en fonction de votre urgence.</p>
+
+    <img src="services.jpg" alt="Services vétérinaires" loading="lazy">
   </section>
 
-  <!-- 🔹 ABOUT SECTION -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>À propos de notre cabinet vétérinaire</h2>
     <p>Le Cabinet Vétérinaire Champel est créé par deux vétérinaires expérimentés, unis par leur passion pour les animaux et leur envie d'offrir des soins de qualité dans un cadre de proximité.</p>
@@ -82,9 +85,11 @@
     </ul>
 
     <p>Nous sommes convaincus que chaque animal mérite des soins adaptés et un suivi rigoureux pour vivre en pleine santé. Faites confiance à notre équipe dévouée pour prendre soin de votre compagnon à quatre pattes.</p>
+
+    <img src="about.jpg" alt="Notre équipe vétérinaire" loading="lazy">
   </section>
 
-  <!-- 🔹 CONTACT SECTION -->
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contactez‑nous</h2>
     <p>
@@ -94,19 +99,20 @@
     </p>
     <p>TEL: 022 736 00 06</p>
 
-    <!-- Call-to-Action Button -->
     <a href="tel:0227360006" class="button">Prendre rendez‑vous</a>
+
+    <img src="contact.jpg" alt="Cabinet vétérinaire Champel contact" loading="lazy">
   </section>
 
-  <!-- 🔹 BACK TO TOP ARROW -->
+  <!-- BACK TO TOP -->
   <a href="#hero" class="back-to-top">&#8679;</a>
 
-  <!-- 🔹 FOOTER -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Cabinet Vétérinaire Champel. Tous droits réservés.</p>
   </footer>
 
-  <!-- 🔹 JS for arrow visibility + nav highlight -->
+  <!-- JS -->
   <script>
     const backToTop = document.querySelector('.back-to-top');
     const navLinks = document.querySelectorAll('nav a');
@@ -125,7 +131,7 @@
       const sections = document.querySelectorAll('section');
       let current = '';
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 120;
         if (window.scrollY >= sectionTop) {
           current = section.getAttribute('id');
         }
