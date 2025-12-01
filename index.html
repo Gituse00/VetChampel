@@ -1,51 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>VetChampel</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Vétérinaire Champel</title>
+  <link rel="stylesheet" href="style.css"> <!-- 🔹 External CSS file -->
 </head>
 <body>
-
-  <!-- 🔹 HERO SECTION -->
-  <header class="hero">
-    <img src="hero.jpg" alt="Hero image" class="fullwide">
-    <h1>Welcome to VetChampel</h1>
-    <p>Your trusted veterinary clinic in Geneva</p>
+  <header>
+    <h1>Cabinet Vétérinaire Champel</h1>
+    <nav> <!-- 🔹 Navigation menu with anchor links -->
+      <a href="#hero">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- 🔹 ABOUT SECTION -->
-  <section id="about">
-    <h2>About Us</h2>
-    <img src="about.jpg" alt="About image">
-    <p>We are dedicated to providing the best care for your pets with compassion and expertise.</p>
-  </section>
+  <!-- 🔹 HERO SECTION -->
+  <div id="hero">
+    <h2>Bienvenue au Cabinet Vétérinaire Champel</h2>
+    <p>Situé au cœur du quartier Champel à Genève.</p>
+    <ul> <!-- 🔹 Quick highlights list -->
+      <li>Vaccination</li>
+      <li>Bilan de santé</li>
+      <li>2 vétérinaires expérimentés</li>
+      <li>Disponibilité</li>
+      <li>Chirurgie</li>
+      <li>Soins dentaires</li>
+      <li>Dermatologie</li>
+      <li>Prévention</li>
+    </ul>
+  </div>
+  <img src="hero.jpg" alt="Cabinet vétérinaire Champel accueil" loading="lazy"> <!-- 🔹 Hero image -->
 
   <!-- 🔹 SERVICES SECTION -->
-  <section id="services">
-    <h2>Services</h2>
-    <img src="services.jpg" alt="Services image">
-    <ul>
-      <li>General Check-ups</li>
-      <li>Vaccinations</li>
-      <li>Surgery</li>
-      <li>Dental Care</li>
+  <div id="services">
+    <h3>Nos services</h3>
+    <h4>Consultations et soins courants</h4>
+    <p>Consultation de base, examen de santé, diagnostic des maladies, suivi des pathologies chroniques, conseils aux propriétaires.</p>
+
+    <h4>Vaccination et prévention</h4>
+    <p>Administration des vaccins, traitements antiparasitaires, bilans de santé.</p>
+
+    <h4>Chirurgie et soins dentaires</h4>
+    <p>Stérilisation, chirurgies de convenance, soins et extractions dentaires, prise en charge des accidents, blessures, morsures etc.</p>
+
+    <h4>Urgences</h4>
+    <p>Nous assurons les urgences de nos clients pendant les heures ouvrables. Dehors nos heures d'ouverture, un collaborateur expérimenté vous accompagnera en fonction de votre urgence.</p>
+  </div>
+  <img src="services.jpg" alt="Services vétérinaires" loading="lazy"> <!-- 🔹 Services image -->
+
+  <!-- 🔹 ABOUT SECTION -->
+  <div id="about">
+    <h3>À propos de notre cabinet vétérinaire</h3>
+    <p>Le Cabinet Vétérinaire Champel est créé par deux vétérinaires expérimentés, unis par leur passion pour les animaux et leur envie d'offrir des soins de qualité dans un cadre de proximité.</p>
+
+    <h4>Notre expérience</h4>
+    <p>Nos vétérinaires exercent leur profession depuis 20 ans. Dans notre cabinet, vous pouvez compter sur cette expérience pour le bien‑être de votre animal. Rejoignez notre équipe de clients et d'animaux satisfaits.</p>
+
+    <h4>Notre mission</h4>
+    <p>Offrir des services vétérinaires complets et personnalisés pour répondre aux besoins des animaux de compagnie du quartier de Champel, tout en garantissant la tranquillité d’esprit de leurs propriétaires.</p>
+
+    <h4>Pourquoi nous choisir ?</h4>
+    <ul> <!-- 🔹 Reasons list -->
+      <li>Une localisation idéale au cœur de Champel à Genève</li>
+      <li>Une approche humaine et bienveillante envers chaque patient</li>
+      <li>Une expertise combinée de plusieurs années dans des domaines variés de la médecine vétérinaire</li>
     </ul>
-  </section>
+
+    <p>Nous sommes convaincus que chaque animal mérite des soins adaptés et un suivi rigoureux pour vivre en pleine santé. Faites confiance à notre équipe dévouée pour prendre soin de votre compagnon à quatre pattes.</p>
+  </div>
+  <img src="about.jpg" alt="Notre équipe vétérinaire" loading="lazy"> <!-- 🔹 About image -->
 
   <!-- 🔹 CONTACT SECTION -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <img src="contact.jpg" alt="Contact image">
-    <p>Address: Avenue de Champel, Geneva</p>
-    <p>Phone: +41 22 123 45 67</p>
-    <p>Email: info@vetchampel.ch</p>
-  </section>
+  <div id="contact">
+    <h3>Contactez‑nous</h3>
+    <p>
+      Cabinet Vétérinaire Champel<br>
+      Rue Pédro‑Meylan 1<br>
+      1208 Genève
+    </p>
+    <p>TEL: 022 736 00 06</p>
+
+    <!-- 🔹 Call-to-Action Button -->
+    <a href="tel:0227360006" class="button">Prendre rendez‑vous</a>
+  </div>
+  <img src="contact.jpg" alt="Cabinet vétérinaire Champel contact" loading="lazy"> <!-- 🔹 Contact image -->
+
+  <!-- 🔹 BACK TO TOP ARROW -->
+  <a href="#hero" class="back-to-top">&#8679;</a>
 
   <!-- 🔹 FOOTER -->
   <footer>
-    <p>&copy; 2025 VetChampel. All rights reserved.</p>
+    <p>&copy; 2025 Cabinet Vétérinaire Champel. Tous droits réservés.</p>
   </footer>
 
+  <!-- 🔹 Optional JS for arrow visibility -->
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block'; // 🔹 Show arrow after scrolling
+      } else {
+        backToTop.style.display = 'none';  // 🔹 Hide arrow near top
+      }
+    });
+  </script>
 </body>
 </html>
