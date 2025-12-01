@@ -1,32 +1,141 @@
-/* 🔹 GENERAL RESET */
+/* 🔹 RESET GENERAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #fafafa; /* light background for readability */
+  color: #333;               /* default text color */
+}
+
+/* 🔹 HEADER + NAVIGATION */
+header {
+  background: #0077cc;       /* clinic blue */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* 🔹 HERO SECTION */
-.hero {
+#hero {
   text-align: center;
-  background-color: #f5f5f5;
-  padding: 20px;
+  padding: 40px 20px;
+  background: #e6f2ff;       /* soft blue background */
 }
-.hero img.fullwide {
-  width: 100%;   /* makes hero image full width */
+#hero h2 {
+  margin-top: 0;
+}
+#hero ul {
+  list-style: none;          /* remove bullets */
+  padding: 0;
+}
+#hero li {
+  margin: 5px 0;
+}
+#hero + img {
+  width: 100%;               /* hero image full width */
   height: auto;
   display: block;
 }
 
-/* 🔹 SECTION STYLING */
-section {
-  padding: 40px;
-  text-align: center;
+/* 🔹 SERVICES SECTION */
+#services {
+  padding: 40px 20px;
+  background: #fff;
 }
-section img {
-  max-width: 600px;
+#services h3 {
+  color: #0077cc;
+}
+#services h4 {
+  margin-top: 20px;
+  color: #444;
+}
+#services + img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  display: block;
+}
+
+/* 🔹 ABOUT SECTION */
+#about {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+#about h3 {
+  color: #0077cc;
+}
+#about h4 {
+  margin-top: 20px;
+  color: #444;
+}
+#about ul {
+  list-style: disc;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: left;
+}
+#about + img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🔹 CONTACT SECTION */
+#contact {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+#contact h3 {
+  color: #0077cc;
+}
+#contact .button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#contact .button:hover {
+  background: #005fa3;
+}
+#contact + img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🔹 BACK TO TOP ARROW */
+.back-to-top {
+  position: fixed;           /* floats in corner */
+  bottom: 20px;
+  right: 20px;
+  background: #0077cc;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  display: none;             /* hidden until JS shows it */
+}
+.back-to-top:hover {
+  background: #005fa3;
 }
 
 /* 🔹 FOOTER */
