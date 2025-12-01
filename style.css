@@ -23,7 +23,7 @@ section {
   text-align: center;
 }
 section img {
-  max-width: 600px; /* keeps images neat */
+  max-width: 600px;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
