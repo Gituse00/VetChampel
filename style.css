@@ -1,26 +1,116 @@
-/* Shared two-column layout */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Reset */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #00695c;
+}
+
+/* Header & Navigation */
+header {
+  background: #00695c;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header h1 {
+  margin-bottom: 0.5rem;
+}
+nav {
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a.active {
+  border-bottom: 2px solid #f57c00;
+  color: #f57c00;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sections: 60% image / 40% text */
 section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 6rem; /* offset for header */
   padding: 4rem 2rem;
 }
 
-/* Image column: 60% */
 section img {
   flex: 3;              /* 60% */
   max-width: 60%;
   height: auto;
   border-radius: 8px;
-  margin: 0;            /* remove gaps */
+  margin: 0;            /* flush left */
   display: block;
 }
 
-/* Text column: 40% */
 section div {
   flex: 2;              /* 40% */
   max-width: 40%;
+  padding-left: 2rem;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 0.5rem 0;
+  background: rgba(0, 105, 92, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: #00695c;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.button:hover {
+  background: #004d40;
+}
+
+/* Footer */
+footer {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 /* Responsive: stack on mobile */
@@ -33,5 +123,6 @@ section div {
   section div {
     max-width: 100%;
     flex: none;
+    padding-left: 0;
   }
 }
