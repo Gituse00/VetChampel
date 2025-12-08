@@ -62,35 +62,30 @@ section {
   scroll-margin-top: 100px; /* offset for fixed header */
 }
 
-/* HERO two-column */
-.hero-container {
+/* ACCUEIL two-column */
+.accueil-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 }
-.hero-image img {
+.accueil-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
-.hero-text {
+.accueil-text {
   flex: 1;
 }
-.hero-text h2 {
+.accueil-text h2 {
   margin-bottom: 1rem;
 }
-.hero-text ul {
+.accueil-text ul {
   list-style: none;
   padding: 0;
 }
-.hero-text li {
+.accueil-text li {
   margin: 0.5rem 0;
   background: rgba(0, 105, 92, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 4px;
-}
-
-/* Images */
-section img {
-  max-width:
