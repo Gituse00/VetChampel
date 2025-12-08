@@ -1,88 +1,68 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
-
-/* Reset */
-body, h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Libre Baskerville', serif;
-  line-height: 1.6;
-  color: #333;
-  background: #fff;
-}
-
-/* Headings */
-h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
-  color: #00695c;
-}
-
-/* Header & Navigation */
-header {
-  background: #00695c;
-  color: #fff;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-header h1 {
-  margin-bottom: 0.5rem;
-}
-nav {
-  text-align: center;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-  transition: color 0.3s, border-bottom 0.3s;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-nav a.active {
-  border-bottom: 2px solid #f57c00;
-  color: #f57c00;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Sections */
-section {
-  padding: 4rem 2rem;
-  margin-top: 4rem;
-  scroll-margin-top: 100px; /* offset for fixed header */
-}
-#hero {
-  background: url('hero-bg.jpg') center/cover no-repeat;
-  color: #fff;
-  position: relative;
-  text-align: center;
-}
-.hero-overlay {
-  background: rgba(0, 105, 92, 0.6);
-  padding: 4rem 2rem;
-}
-
-/* Lists */
-ul {
-  margin-left: 2rem;
-}
-#hero ul {
-  list-style: none;
-  padding: 0;
-}
 #hero li {
   display: inline-block;
   margin: 0.5rem;
   background: rgba(0, 105, 92, 0.9); /* darker teal */
   color: #fff;
-  padding: 
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Images */
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: #f57c00;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.button:hover {
+  background: #ef6c00;
+}
+
+/* Back-to-top arrow */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #00695c;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Footer */
+footer {
+  background: #00695c;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+  .hero-overlay {
+    padding: 2rem 1rem;
+  }
+}
