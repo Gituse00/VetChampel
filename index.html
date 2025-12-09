@@ -21,9 +21,9 @@
 
   <!-- 1. ACCUEIL -->
   <section id="accueil" class="split">
-    <div class="image-box">
+    <div class="image-box" data-label="Accueil">
       <img src="accueil.webp" alt="Accueil" loading="lazy"
-           onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+           onerror="this.style.display='none';">
     </div>
     <div class="word-cloud">
       <span class="big green">Bienvenue</span>
@@ -43,52 +43,46 @@
     <div>
       <h2>À PROPOS DE NOTRE CABINET VÉTÉRINAIRE</h2>
       <p>Le Cabinet Vétérinaire Champel est créé par deux vétérinaires expérimentés...</p>
-      <h3>Notre expérience</h3>
-      <p>Nos vétérinaires exercent leur profession depuis 20 ans...</p>
-      <h3>Notre mission</h3>
-      <p>Offrir des services vétérinaires complets et personnalisés...</p>
-      <h3>Pourquoi nous choisir ?</h3>
-      <ul>
-        <li>Localisation idéale au cœur de Champel</li>
-        <li>Approche humaine et bienveillante</li>
-        <li>Expertise combinée de plusieurs années</li>
-      </ul>
+      <!-- Text 2 continues -->
     </div>
   </section>
-  <section class="parallax"></section>
+  <section class="parallax image-box" data-label="À propos">
+    <img src="apropos.webp" alt="À propos" loading="lazy"
+         onerror="this.style.display='none';">
+  </section>
 
   <!-- 3. NOS SERVICES -->
   <section id="services" class="grid-4">
     <div>
       <h3>Consultations</h3>
       <p>Examens de santé, diagnostics et suivi.</p>
-      <div class="image-box">
+      <div class="image-box" data-label="Service 1">
         <img src="service1.webp" alt="Consultations" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
     </div>
     <div>
       <h3>Vaccination</h3>
       <p>Prévention et bilans réguliers.</p>
-      <div class="image-box">
+      <div class="image-box" data-label="Service 2">
         <img src="service2.webp" alt="Vaccination" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
     </div>
     <div>
       <h3>Chirurgie</h3>
       <p>Stérilisation et interventions courantes.</p>
-      <div class="image-box">
+      <div class="image-box" data-label="Service 3">
         <img src="service3.webp" alt="Chirurgie" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
     </div>
     <div>
       <h3>Soins dentaires</h3>
       <p>Hygiène et extractions dentaires.</p>
-      <div class="image-box">
+      <div class="image-box" data-label="Service 4">
         <img src="service4.webp" alt="Soins dentaires" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
     </div>
   </section>
@@ -97,13 +91,13 @@
   <section id="temoignages" class="grid-8">
     <div class="testimonial">
       <p>“Très professionnels et attentionnés.”</p>
-      <div class="image-box">
+      <div class="image-box" data-label="Client 1">
         <img src="client1.webp" alt="Client 1" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
       <div class="hover-text">“Très professionnels et attentionnés.”</div>
     </div>
-    <!-- Repeat for client2.webp … client8.webp -->
+    <!-- Repeat for Client 2 … Client 8 -->
   </section>
 
   <!-- 5. CONTACT -->
@@ -114,34 +108,36 @@
     </div>
     <div>
       <h2>Localisation</h2>
-      <div class="image-box">
+      <div class="image-box" data-label="Localisation">
         <img src="localisation.webp" alt="Localisation" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
     </div>
     <div>
       <h2>Parking</h2>
-      <div class="image-box">
+      <div class="image-box" data-label="Parking">
         <img src="parking.webp" alt="Parking" loading="lazy"
-             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+             onerror="this.style.display='none';">
       </div>
     </div>
   </section>
 
   <!-- 6. STATIC MAP -->
   <section id="map">
-    <div class="image-box">
+    <div class="image-box" data-label="Google Map">
       <img src="map.webp" alt="Carte statique" loading="lazy"
-           onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+           onerror="this.style.display='none';">
     </div>
-    <a href="https://maps.google.com/?q=Cabinet+Veterinaire+Champel" class="button">Voir sur Google Maps</a>
+    <a href="https://maps.google.com/?q=Cabinet+Veterinaire+Champel" class="button">
+      Voir sur Google Maps
+    </a>
   </section>
 
   <!-- 7. GENÈVE IMAGE -->
   <section id="geneve">
-    <div class="image-box">
+    <div class="image-box" data-label="Genève">
       <img src="geneve.webp" alt="Genève" loading="lazy"
-           onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+           onerror="this.style.display='none';">
     </div>
   </section>
 
@@ -150,7 +146,7 @@
     <p>Cabinet Vétérinaire Champel<br>
     TEL: 022 736 00 06<br>
     Horaires: Lun‑Ven 8h‑19h</p>
-    <small class="version">v2025.12.09.09.37</small>
+    <small class="version">v2025.12.09.09.44</small>
   </footer>
 </body>
 </html>
