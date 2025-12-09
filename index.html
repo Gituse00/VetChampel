@@ -21,8 +21,10 @@
 
   <!-- 1. ACCUEIL -->
   <section id="accueil" class="split">
-    <img src="accueil.webp" alt="Accueil" 
-         onerror="this.src='placeholder.webp';" loading="lazy">
+    <div class="image-box">
+      <img src="accueil.webp" alt="Accueil" loading="lazy"
+           onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+    </div>
     <div class="word-cloud">
       <span class="big green">Bienvenue</span>
       <span class="medium orange">Vaccination</span>
@@ -60,26 +62,34 @@
     <div>
       <h3>Consultations</h3>
       <p>Examens de santé, diagnostics et suivi.</p>
-      <img src="service1.webp" alt="Consultations" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="service1.webp" alt="Consultations" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
     </div>
     <div>
       <h3>Vaccination</h3>
       <p>Prévention et bilans réguliers.</p>
-      <img src="service2.webp" alt="Vaccination" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="service2.webp" alt="Vaccination" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
     </div>
     <div>
       <h3>Chirurgie</h3>
       <p>Stérilisation et interventions courantes.</p>
-      <img src="service3.webp" alt="Chirurgie" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="service3.webp" alt="Chirurgie" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
     </div>
     <div>
       <h3>Soins dentaires</h3>
       <p>Hygiène et extractions dentaires.</p>
-      <img src="service4.webp" alt="Soins dentaires" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="service4.webp" alt="Soins dentaires" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
     </div>
   </section>
 
@@ -87,17 +97,13 @@
   <section id="temoignages" class="grid-8">
     <div class="testimonial">
       <p>“Très professionnels et attentionnés.”</p>
-      <img src="client1.webp" alt="Client 1" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="client1.webp" alt="Client 1" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
       <div class="hover-text">“Très professionnels et attentionnés.”</div>
     </div>
-    <div class="testimonial">
-      <p>“Un accueil chaleureux.”</p>
-      <img src="client2.webp" alt="Client 2" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
-      <div class="hover-text">“Un accueil chaleureux.”</div>
-    </div>
-    <!-- Repeat up to client8.webp -->
+    <!-- Repeat for client2.webp … client8.webp -->
   </section>
 
   <!-- 5. CONTACT -->
@@ -108,27 +114,35 @@
     </div>
     <div>
       <h2>Localisation</h2>
-      <img src="localisation.webp" alt="Localisation" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="localisation.webp" alt="Localisation" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
     </div>
     <div>
       <h2>Parking</h2>
-      <img src="parking.webp" alt="Parking" 
-           onerror="this.src='placeholder.webp';" loading="lazy">
+      <div class="image-box">
+        <img src="parking.webp" alt="Parking" loading="lazy"
+             onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+      </div>
     </div>
   </section>
 
   <!-- 6. STATIC MAP -->
   <section id="map">
-    <img src="map.webp" alt="Carte statique" 
-         onerror="this.src='placeholder.webp';" loading="lazy">
+    <div class="image-box">
+      <img src="map.webp" alt="Carte statique" loading="lazy"
+           onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+    </div>
     <a href="https://maps.google.com/?q=Cabinet+Veterinaire+Champel" class="button">Voir sur Google Maps</a>
   </section>
 
   <!-- 7. GENÈVE IMAGE -->
   <section id="geneve">
-    <img src="geneve.webp" alt="Genève" 
-         onerror="this.src='placeholder.webp';" loading="lazy">
+    <div class="image-box">
+      <img src="geneve.webp" alt="Genève" loading="lazy"
+           onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+    </div>
   </section>
 
   <!-- 8. FOOTER CONTACT -->
@@ -136,6 +150,7 @@
     <p>Cabinet Vétérinaire Champel<br>
     TEL: 022 736 00 06<br>
     Horaires: Lun‑Ven 8h‑19h</p>
+    <small class="version">v2025.12.09.09.37</small>
   </footer>
 </body>
 </html>
