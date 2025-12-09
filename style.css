@@ -128,6 +128,17 @@ section { padding:3rem 1.5rem; }
   white-space:pre-line; /* keep line breaks */
 }
 
+/* Fade-in animation */
+.fade-in {
+  opacity:0;
+  animation: fadeIn 1.2s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(10px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+
 
 
 /* Contact grid */
