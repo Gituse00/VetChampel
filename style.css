@@ -102,6 +102,7 @@ section { padding:3rem 1.5rem; }
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:1.5rem;
+  row-gap:1.65rem; /* 10% more vertical gap between rows */
 }
 .testimonial {
   position:relative;
@@ -124,7 +125,9 @@ section { padding:3rem 1.5rem; }
   line-height:1.4;
   color:#333;
   margin:0;
+  white-space:pre-line; /* keep line breaks */
 }
+
 
 
 /* Contact grid */
