@@ -48,7 +48,7 @@ section { padding:3rem 1.5rem; }
 @media (max-width:768px) { #apropos .apropos-text { column-count:1; } }
 
 /* Services grid */
-#services { margin-bottom:3rem; } /* smaller margin to avoid collapsing issues */
+#services { margin-bottom:3rem; }
 .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; align-items:end; text-align:center; }
 .grid-4 .image-box {
   height:207px; /* 15% taller than 180px */
@@ -62,7 +62,7 @@ section { padding:3rem 1.5rem; }
 /* Parallax separator between services and testimonials */
 .parallax-separator { width:100%; height:480px; margin:0; padding:0; }
 .parallax-image {
-  background-image:url('separator.webp'); /* replace if needed */
+  background-image:url('separator.webp');
   background-attachment:fixed;
   background-size:cover;
   background-position:center;
@@ -118,19 +118,9 @@ section { padding:3rem 1.5rem; }
 .testimonial.title-block { display:flex; align-items:center; justify-content:center; background:none; }
 .testimonial.title-block h2 { margin:0; }
 
-/* Contact grid (basic) */
+/* Contact grid */
 .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
 #map .image-box { height:260px; }
 
 /* Responsive general */
-@media (max-width:1024px) {
-  .grid-4 { grid-template-columns:repeat(2,1fr); }
-  .grid-8 { grid-template-columns:repeat(2,1fr); }
-  .grid-3 { grid-template-columns:repeat(1,1fr); }
-  .split { flex-direction:column; }
-  .split .image-box { flex:0 0 auto; width:100%; min-height:280px; }
-}
-@media (max-width:640px) {
-  .grid-4 { grid-template-columns:1fr; }
-  .grid-8 { grid-template-columns:1fr; }
-}
+@media (max-width
