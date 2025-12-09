@@ -12,37 +12,30 @@ nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; }
 /* Sections */
 section { padding:4rem 2rem; margin-top:6rem; }
 
+/* Placeholder box */
+.image-box {
+  width: 100%;
+  height: 200px;
+  background: #eee;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-box.placeholder::before {
+  content: "Image à venir";
+  color: #666;
+  font-size: 1rem;
+}
+
 /* 1. Split layout (Accueil) */
 .split { display:flex; align-items:center; }
-.split img { flex:3; max-width:60%; height:auto; border-radius:8px; }
-.split .word-cloud { flex:2; max-width:40%; padding-left:2rem; }
-
-/* Word cloud styles */
-.word-cloud span { margin:0.5rem; display:inline-block; }
-.big { font-size:2rem; }
-.medium { font-size:1.5rem; }
-.small { font-size:1rem; }
-.green { color:#00695c; }
-.orange { color:#f57c00; }
-.blue { color:#2196f3; }
-.purple { color:#9c27b0; }
-.teal { color:#009688; }
-.red { color:#e53935; }
-.brown { color:#795548; }
-.navy { color:#3f51b5; }
-.gray { color:#607d8b; }
-
-/* 2. Centered text */
-.centered { text-align:center; }
-.centered div { max-width:600px; margin:0 auto; }
-
-/* Parallax */
-.parallax { background-image:url('apropos.webp'); background-attachment:fixed; background-size:cover; background-position:center; height:400px; }
-@media (max-width:768px) { .parallax { background-attachment:scroll; } }
-
-/* 3. Services grid */
-.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
-.grid-4 img { width:100%; border-radius:8px; margin-top:1rem; }
-
-/* 4. Testimonials grid */
-.grid-8 { display:grid; grid-template-columns:repeat(4,1fr
+.split .image-box { flex:3; max-width:60%; }
+.split .word-cloud { flex:
