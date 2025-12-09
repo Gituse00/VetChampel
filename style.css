@@ -81,6 +81,14 @@ section { padding:3rem 1.5rem; }
   align-items:end;
   text-align:center;
 }
+.grid-4 .image-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid-4 .image-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 .grid-4 .image-box { height:180px; }
 
 /* Testimonials section */
