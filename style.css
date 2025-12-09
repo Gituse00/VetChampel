@@ -97,37 +97,6 @@ section { padding:3rem 1.5rem; }
   color:#5a4634; /* brownish accent */
 }
 .grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
-.testimonial { position:relative; display:flex; flex-direction:column; gap:0.5rem; }
-.testimonial .image-box { height:180px; }
-.hover-text { position:absolute; inset:0; background:rgba(0,105,92,0.75); color:#fff; opacity:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:0.75rem; transition:opacity 0.25s; }
-.testimonial:hover .hover-text { opacity:1; }
-@media (max-width:768px) {
-  .hover-text { position:static; background:transparent; color:#333; opacity:1; }
-}
-
-/* Contact grid */
-.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; text-align:center; }
-.grid-3 .image-box { height:180px; }
-
-/* Map */
-#map .image-box { height:240px; /* 20% taller */ text-align:center; margin-bottom:1rem; }
-
-/* Genève image */
-#geneve .image-box { height:260px; }
-
-/* Footer */
-footer { background:#f9f9f9; text-align:center; padding:2rem; }
-.version { display:block; margin-top:1rem; font-size:0.75rem; color:#999; letter-spacing:0.3px; }
-
-/* Responsive */
-@media (max-width:1024px) {
-  .split { gap:1.25rem; }
-}
-@media (max-width:768px) {
-  .split { flex-direction:column; }
-  .split .image-box { max-width:700px; width:100%; }
-  .grid-4 { grid-template-columns:repeat(2,1fr); }
-  .grid-8 { grid-template-columns:repeat(2,1fr); }
-  .grid-3 { grid-template-columns:1fr; }
-  .main-nav { flex-wrap:wrap; gap:0.75rem; }
-}
+.testimonial { 
+  position:relative; 
+  display:flex
