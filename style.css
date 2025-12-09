@@ -51,6 +51,7 @@ section { padding:3rem 1.5rem; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer; /* clickable for popup */
 }
 .image-box::before {
   content: attr(data-label);
@@ -72,19 +73,19 @@ section { padding:3rem 1.5rem; }
 .parallax img { display:none; }
 
 /* Services grid */
-#services { margin-bottom:4rem; } /* more space before testimonials */
+#services { margin-bottom:4rem; }
 .grid-4 {
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:2rem;
-  align-items:end; /* align all service boxes at bottom */
+  align-items:end;
   text-align:center;
 }
 .grid-4 .image-box { height:180px; }
 
 /* Testimonials section */
 .testimonials-box {
-  background:#f0ebe6; /* warmer light grey/brown tone */
+  background:#f0ebe6;
   padding:3rem 2rem;
   border-radius:10px;
   margin-top:2rem;
@@ -94,9 +95,70 @@ section { padding:3rem 1.5rem; }
   font-size:1.8rem;
   font-weight:700;
   margin-bottom:2rem;
-  color:#5a4634; /* brownish accent */
+  color:#5a4634;
 }
-.grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+.grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
 .testimonial { 
   position:relative; 
-  display:flex
+  display:flex; 
+  flex-direction:column; 
+  gap:0.5rem; 
+  overflow:hidden; 
+}
+.testimonial .image-box { height:220px; }
+.testimonial .image-box img { transition: transform 0.3s ease; }
+.testimonial:hover .image-box img { transform: scale(1.08); }
+
+/* Popup (lightbox) */
+.lightbox {
+  display:none;
+  position:fixed;
+  z-index:2000;
+  left:0; top:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.8);
+  align-items:center;
+  justify-content:center;
+}
+.lightbox img {
+  max-width:90%;
+  max-height:90%;
+  border-radius:8px;
+}
+.lightbox:target { display:flex; }
+
+/* Contact grid */
+.grid-3 {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2rem;
+  text-align:center;
+}
+.grid-3 .image-box {
+  height:200px;
+  width:100%;
+  max-width:100%;
+}
+
+/* Map */
+#map .image-box { height:288px; text-align:center; margin-bottom:1rem; }
+
+/* Genève image */
+#geneve .image-box { height:260px; }
+
+/* Footer */
+footer { background:#f9f9f9; text-align:center; padding:2rem; }
+.version { display:block; margin-top:1rem; font-size:0.75rem; color:#999; letter-spacing:0.3px; }
+
+/* Responsive */
+@media (max-width:1024px) {
+  .split { gap:1.25rem; }
+}
+@media (max-width:768px) {
+  .split { flex-direction:column; }
+  .split .image-box { max-width:700px; width:100%; }
+  .grid-4 { grid-template-columns:repeat(2,1fr); }
+  .grid-8 { grid-template-columns:repeat(2,1fr); } /* 2 per row on tablets/mobile */
+  .grid-3 { grid-template-columns:1fr; }
+  .main-nav { flex-wrap:wrap; gap:0.75rem; }
+}
