@@ -114,6 +114,22 @@ section { padding:3rem 1.5rem; }
   font-weight:700;
 }
 
+/* À propos text in two columns */
+#apropos .apropos-text {
+  column-count: 2;
+  column-gap: 2rem; /* space between columns */
+  text-align: justify; /* optional for neat alignment */
+}
+
+/* Responsive fallback: single column on mobile */
+@media (max-width: 768px) {
+  #apropos .apropos-text {
+    column-count: 1;
+  }
+}
+
+
+
 /* ============================
    Parallax (À propos image)
    ============================ */
@@ -145,6 +161,11 @@ section { padding:3rem 1.5rem; }
 .grid-4 .image-box:hover {
   transform: translateY(-6px);
   box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+/* Services grid images taller by 15% */
+.grid-4 .image-box {
+  height: 207px; /* 180px × 1.15 ≈ 207px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* ============================
