@@ -3,107 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clinique VétChampel</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Cabinet Vétérinaire Champel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="topline">
-      <span>📞 022 736 00 06</span>
-      <span>✉️ info@vetchampel.ch</span>
+      <strong>Cabinet vétérinaire Champel</strong>
+      <span>Rue Pedro-Meylan 1, 1208 Genève</span>
+      <span>TEL: 022 736 00 06</span>
     </div>
     <nav class="main-nav">
       <a href="#accueil">Accueil</a>
       <a href="#apropos">À propos</a>
-      <a href="#services">Services</a>
+      <a href="#services">Nos services</a>
       <a href="#temoignages">Témoignages</a>
       <a href="#contact">Contact</a>
-      <span class="lang">FR | EN</span>
+      <a href="?lang=en" class="lang">english</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="accueil" class="hero split">
-    <div class="image-box" data-label="Hero image">
-      <img src="hero.webp" alt="Clinique vétérinaire" loading="lazy">
+  <!-- 1. ACCUEIL -->
+  <section id="accueil" class="split hero">
+    <div class="image-box" data-label="Accueil">
+      <img src="accueil.webp" alt="Accueil" loading="lazy"
+           onerror="this.style.display='none';">
     </div>
     <div class="hero-text">
-      <h1>Bienvenue à VétChampel</h1>
+      <h2>Bienvenue au Cabinet Vétérinaire Champel</h2>
+      <p>Situé au cœur du quartier Champel à Genève.</p>
       <div class="word-cloud">
-        <span class="xl primary">Soins</span>
-        <span class="lg secondary">Urgences</span>
-        <span class="md accent">Chirurgie</span>
-        <span class="lg neutral">Vaccins</span>
-        <span class="xl accent">Bien-être</span>
+        <span class="xl primary">Vaccination</span>
+        <span class="lg secondary">Bilan de santé</span>
+        <span class="md accent">2 vétérinaires expérimentés</span>
+        <span class="md neutral">Disponibilité</span>
+        <span class="lg primary">Chirurgie</span>
+        <span class="lg secondary">Soins dentaires</span>
+        <span class="md accent">Dermatologie</span>
+        <span class="md neutral">Prévention</span>
       </div>
-      <a href="#contact" class="cta">Prendre rendez-vous</a>
+      <a href="#contact" class="cta">NOUS CONTACTER</a>
     </div>
   </section>
 
-  <!-- À propos -->
-  <section id="apropos">
-    <div class="parallax"></div>
-    <div class="apropos-text">
-      <p>Notre clinique vétérinaire est dédiée au bien-être de vos compagnons...</p>
-      <p>Nous offrons des soins complets, des urgences aux suivis réguliers...</p>
-      <p>Notre équipe passionnée est là pour vous accompagner...</p>
+  <!-- 2. À PROPOS -->
+  <section id="apropos" class="centered">
+    <div>
+      <h2>À PROPOS DE NOTRE CABINET VÉTÉRINAIRE</h2>
+      <p>Le Cabinet Vétérinaire Champel est créé par deux vétérinaires expérimentés, unis par leur passion pour les animaux et leur envie d'offrir des soins de qualité dans un cadre de proximité.</p>
+      <h3>Notre expérience</h3>
+      <p>Nos vétérinaires exercent leur profession depuis 20 ans. Dans notre cabinet, vous pouvez compter sur cette expérience pour le bien-être de votre animal.</p>
+      <h3>Notre mission</h3>
+      <p>Offrir des services vétérinaires complets et personnalisés pour répondre aux besoins des animaux de compagnie du quartier de Champel.</p>
+      <h3>Pourquoi nous choisir ?</h3>
+      <ul>
+        <li>Localisation idéale au cœur de Champel</li>
+        <li>Approche humaine et bienveillante</li>
+        <li>Expertise combinée de plusieurs années</li>
+      </ul>
     </div>
   </section>
-
-  <!-- Services -->
-  <section id="services">
-    <h2 class="section-title">Nos services</h2>
-    <div class="grid-4">
-      <div class="image-box" data-label="Consultations"><img src="service1.webp" alt=""></div>
-      <div class="image-box" data-label="Chirurgie"><img src="service2.webp" alt=""></div>
-      <div class="image-box" data-label="Vaccinations"><img src="service3.webp" alt=""></div>
-      <div class="image-box" data-label="Urgences"><img src="service4.webp" alt=""></div>
-    </div>
+  <section class="parallax image-box" data-label="À propos">
+    <img src="apropos.webp" alt="À propos" loading="lazy"
+         onerror="this.style.display='none';">
   </section>
 
-  <!-- Parallax separator -->
-  <section class="parallax-separator">
-    <div class="parallax-image">
-      <img src="separator.webp" alt="Ambiance clinique" loading="lazy">
-    </div>
-  </section>
-
-  <!-- Témoignages -->
-  <section id="temoignages" class="grid-8 testimonials-box">
-    <div class="testimonial title-block">
-      <h2 class="section-title">Nos patients témoignent 🐾</h2>
-    </div>
-    <!-- Example testimonial -->
-    <div class="testimonial">
-      <div class="image-box" data-label="Client 1">
-        <img src="client1.webp" alt="Chat paresseux" loading="lazy">
-        <div class="overlay-text">
-          <p>Je suis un chat paresseux…<br>J’avais perdu toute énergie…<br>Retrouvé grâce au vétérinaire.</p>
-        </div>
+  <!-- 3. NOS SERVICES -->
+  <section id="services" class="grid-4">
+    <div>
+      <h3>Consultations et soins courants</h3>
+      <p>Consultation de base, examen de santé, diagnostic des maladies, suivi des pathologies chroniques, conseils aux propriétaires.</p>
+      <div class="image-box" data-label="Service 1">
+        <img src="service1.webp" alt="Consultations" loading="lazy"
+             onerror="this.style.display='none';">
       </div>
     </div>
-    <!-- Repeat for other clients -->
-    <div class="testimonial title-block">
-      <h2 class="section-title">Histoires poilues 🐾</h2>
+    <div>
+      <h3>Vaccination et prévention</h3>
+      <p>Administration des vaccins, traitements antiparasitaires, bilans de santé.</p>
+      <div class="image-box" data-label="Service 2">
+        <img src="service2.webp" alt="Vaccination" loading="lazy"
+             onerror="this.style.display='none';">
+      </div>
+    </div>
+    <div>
+      <h3>Chirurgie et soins dentaires</h3>
+      <p>Stérilisation, chirurgies de convenance, soins et extractions dentaires, prise en charge des accidents.</p>
+      <div class="image-box" data-label="Service 3">
+        <img src="service3.webp" alt="Chirurgie" loading="lazy"
+             onerror="this.style.display='none';">
+      </div>
+    </div>
+    <div>
+      <h3>Urgences</h3>
+      <p>Nous assurons les urgences pendant les heures ouvrables. Hors horaires, un collaborateur expérimenté vous accompagne.</p>
+      <div class="image-box" data-label="Service 4">
+        <img src="service4.webp" alt="Urgences" loading="lazy"
+             onerror="this.style.display='none';">
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <div class="grid-3">
-      <div class="image-box" data-label="Adresse"><img src="contact1.webp" alt=""></div>
-      <div class="image-box" data-label="Horaires"><img src="contact2.webp" alt=""></div>
-      <div class="image-box" data-label="Email"><img src="contact3.webp" alt=""></div>
+<!-- Parallax separator -->
+<section class="parallax-separator">
+  <div class="parallax-image">
+    <!-- Optional fallback image for mobile -->
+    <img src="separator.webp" alt="Clinique vétérinaire ambiance" loading="lazy">
+  </div>
+</section>
+  
+<!-- 4. TÉMOIGNAGES -->
+<section id="temoignages" class="grid-8 testimonials-box">
+  <!-- Block 1: Title -->
+  <div class="testimonial title-block">
+    <h2 class="section-title">Nos patients témoignent 🐾</h2>
+  </div>
+
+  <!-- Block 2: Client 1 (Lazy Cat) -->
+  <div class="testimonial">
+    <div class="image-box" data-label="Client 1 (Chat)">
+      <img src="client1.webp" alt="Chat paresseux" loading="lazy">
+      <div class="overlay-text">
+        <p>Je suis un chat paresseux…<br>
+        J’avais perdu toute énergie…<br>
+        Retrouvé grâce au vétérinaire.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Block 3: Client 2 (Happy Dog) -->
+  <div class="testimonial">
+    <div class="image-box" data-label="Client 2 (Chien)">
+      <img src="client2.webp" alt="Chien heureux" loading="lazy">
+      <div class="overlay-text">
+        <p>Je suis un chien heureux…<br>
+        Chaque visite me garde en forme…<br>
+        Toujours joyeux et en santé.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Block 4: Client 3 (Cat saved from bladder stones) -->
+  <div class="testimonial">
+    <div class="image-box" data-label="Client 3 (Chat)">
+      <img src="client3.webp" alt="Chat sauvé" loading="lazy">
+      <div class="overlay-text">
+        <p>Je suis un chat sauvé…<br>
+        Mes calculs urinaires étaient douloureux…<br>
+        Ils m’ont rendu la vie.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Block 5: Client 4 (Lazy Dog) -->
+  <div class="testimonial">
+    <div class="image-box" data-label="Client 4 (Chien)">
+      <img src="client4.webp" alt="Chien paresseux" loading="lazy">
+      <div class="overlay-text">
+        <p>Moi, le chien paresseux…<br>
+        Je dormais tout le temps…<br>
+        J’ai retrouvé mon entrain.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Block 6: Client 5 (Cochon d’Inde) -->
+  <div class="testimonial">
+    <div class="image-box" data-label="Client 5 (Cochon d’Inde)">
+      <img src="client5.webp" alt="Cochon d’Inde" loading="lazy">
+      <div class="overlay-text">
+        <p>Moi, le cochon d’Inde…<br>
+        Je ne mangeais plus bien…<br>
+        J’ai retrouvé l’appétit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Block 7: Client 6 (Rabbit) -->
+  <div class="testimonial">
+    <div class="image-box" data-label="Client 6 (Lapin)">
+      <img src="client6.webp" alt="Lapin stérilisé" loading="lazy">
+      <div class="overlay-text">
+        <p>Je suis un lapin…<br>
+        Ma stérilisation s’est bien passée…<br>
+        Je suis plus calme et heureux.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Block 8: Secondary Title -->
+  <div class="testimonial title-block">
+    <h2 class="section-title">Histoires poilues 🐾</h2>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- 5. CONTACT -->
+  <section id="contact" class="grid-3">
+    <div>
+      <h2>Adresse</h2>
+      <p>Rue Pédro‑Meylan 1<br>1208 Genève</p>
+    </div>
+    <div>
+      <h2>Localisation</h2>
+      <div class="image-box" data-label="Localisation">
+        <img src="localisation.webp" alt="Localisation" loading="lazy"
+             onerror="this.style.display='none';">
+      </div>
+    </div>
+    <div>
+      <h2>Parking</h2>
+      <div class="image-box" data-label="Parking">
+        <img src="parking.webp" alt="Parking" loading="lazy"
+             onerror="this.style.display='none';">
+      </div>
     </div>
   </section>
 
-  <!-- Map -->
+  <!-- 6. STATIC MAP -->
   <section id="map">
-    <div class="image-box" data-label="Map"><img src="map.webp" alt=""></div>
+    <div class="image-box" data-label="Google Map">
+      <img src="map.webp" alt="Carte statique" loading="lazy"
+           onerror="this.style.display='none';">
+    </div>
+    <a href="https://maps.google.com/?q=Cabinet+Veterinaire+Champel" class="cta">VOIR SUR GOOGLE MAPS</a>
   </section>
 
+  <!-- 7. GENÈVE IMAGE -->
+  <section id="geneve">
+    <div class="image-box" data-label="Genève">
+      <img src="geneve.webp" alt="Genève" loading="lazy"
+           onerror="this.style.display='none';">
+    </div>
+  </section>
+
+<!-- 8. FOOTER CONTACT -->
+<footer>
+  <p>Cabinet Vétérinaire Champel<br>
+  TEL: 022 736 00 06<br>
+  Horaires de rendez-vous:<br>
+  Lundi‑Vendredi 8h30‑12h00 et 14h00‑18h00<br>
+  Jeudi 8h30‑14h00<br>
+  Urgences 24h: 022 736 00 06</p>
+  <small class="version">v2025.12.09.10.25</small>
+</footer>
 </body>
 </html>
