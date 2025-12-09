@@ -84,59 +84,59 @@ section { padding:3rem 1.5rem; }
 .grid-4 .image-box { height:180px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .grid-4 .image-box:hover { transform: translateY(-6px); box-shadow:0 6px 12px rgba(0,0,0,0.15); }
 
-/* Testimonials section */
-.testimonials-box {
-  background:#f0ebe6;
-  padding:3rem 2rem;
-  border-radius:10px;
-  margin-top:2rem;
-}
-.section-title {
-  text-align:center;
-  font-size:1.8rem;
-  font-weight:700;
-  margin-bottom:2rem;
-  color:#5a4634;
-}
-.grid-8 {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:1.5rem;
-  row-gap:1.65rem; /* 10% more vertical gap between rows */
-}
-.testimonial {
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  gap:0.75rem;
-  text-align:center;
-}
 .testimonial .image-box {
-  height:220px;
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 8px;
 }
+
 .testimonial .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 .testimonial:hover .image-box img {
   transform: scale(1.08);
 }
-.testimonial p {
-  font-size:0.95rem;
-  line-height:1.4;
-  color:#333;
-  margin:0;
-  white-space:pre-line; /* keep line breaks */
+
+/* Overlay text box: only bottom portion */
+.overlay-text {
+  position: absolute;
+  bottom: -40%; /* hidden initially */
+  left: 0;
+  width: 100%;
+  height: 40%; /* covers only lower part of image */
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: bottom 0.5s ease;
+  text-align: center;
 }
 
-/* Fade-in animation */
-.fade-in {
-  opacity:0;
-  animation: fadeIn 1.2s ease forwards;
+.testimonial:hover .overlay-text {
+  bottom: 0; /* slides up to cover bottom portion */
 }
-@keyframes fadeIn {
-  from { opacity:0; transform: translateY(10px); }
-  to { opacity:1; transform: translateY(0); }
+
+/* Fade-in effect for text */
+.overlay-text p {
+  margin: 0;
+  opacity: 0;
+  animation: fadeInText 1s ease forwards;
 }
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 
 
