@@ -69,10 +69,10 @@ section { padding:3rem 1.5rem; }
   height: 360px;
   border-radius: 8px;
 }
-.parallax img { display:none; } /* hide inline img, use background instead */
+.parallax img { display:none; }
 
 /* Services grid */
-#services { margin-bottom:3rem; }
+#services { margin-bottom:4rem; } /* more space before testimonials */
 .grid-4 {
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -82,11 +82,19 @@ section { padding:3rem 1.5rem; }
 }
 .grid-4 .image-box { height:180px; }
 
-/* Testimonials grid */
+/* Testimonials section */
 .testimonials-box {
-  background:#f7f5f2; /* light grey/brown tone */
-  padding:2rem;
-  border-radius:8px;
+  background:#f0ebe6; /* warmer light grey/brown tone */
+  padding:3rem 2rem;
+  border-radius:10px;
+  margin-top:2rem;
+}
+.section-title {
+  text-align:center;
+  font-size:1.8rem;
+  font-weight:700;
+  margin-bottom:2rem;
+  color:#5a4634; /* brownish accent */
 }
 .grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
 .testimonial { position:relative; display:flex; flex-direction:column; gap:0.5rem; }
@@ -102,7 +110,7 @@ section { padding:3rem 1.5rem; }
 .grid-3 .image-box { height:180px; }
 
 /* Map */
-#map .image-box { height:200px; text-align:center; margin-bottom:1rem; }
+#map .image-box { height:240px; /* 20% taller */ text-align:center; margin-bottom:1rem; }
 
 /* Genève image */
 #geneve .image-box { height:260px; }
