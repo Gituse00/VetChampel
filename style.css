@@ -98,11 +98,34 @@ section { padding:3rem 1.5rem; }
   margin-bottom:2rem;
   color:#5a4634;
 }
-.grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
-.testimonial { position:relative; display:flex; flex-direction:column; gap:0.5rem; overflow:hidden; }
-.testimonial .image-box { height:220px; }
-.testimonial .image-box img { transition: transform 0.3s ease; }
-.testimonial:hover .image-box img { transform: scale(1.08); }
+.grid-8 {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1.5rem;
+}
+.testimonial {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+  text-align:center;
+}
+.testimonial .image-box {
+  height:220px;
+}
+.testimonial .image-box img {
+  transition: transform 0.3s ease;
+}
+.testimonial:hover .image-box img {
+  transform: scale(1.08);
+}
+.testimonial p {
+  font-size:0.95rem;
+  line-height:1.4;
+  color:#333;
+  margin:0;
+}
+
 
 /* Contact grid */
 .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; text-align:center; }
