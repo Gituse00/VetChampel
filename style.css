@@ -21,4 +21,89 @@ section { padding:3rem 1.5rem; }
 .split .hero-text { flex:1; max-width:520px; }
 
 /* Word cloud */
-.word-cloud { display:flex; flex-wrap:wrap; gap:0.5rem 0.75rem; margin:1
+.word-cloud { display:flex; flex-wrap:wrap; gap:0.5rem 0.75rem; margin:1rem 0 1.5rem; max-width:520px; line-height:1.2; }
+.word-cloud span { display:inline-block; font-weight:700; }
+.xl { font-size:1.6rem; }
+.lg { font-size:1.35rem; }
+.md { font-size:1.1rem; }
+.primary { color:#00695c; }
+.secondary { color:#1a73e8; }
+.accent { color:#e65100; }
+.neutral { color:#555; }
+
+/* CTA button */
+.cta { display:inline-block; background:#00695c; color:#fff; padding:0.75rem 1.25rem; border-radius:6px; font-weight:700; text-decoration:none; box-shadow:0 2px 6px rgba(0,0,0,0.12); }
+.cta:hover { background:#035e52; }
+
+/* Placeholder box */
+.image-box {
+  width: 100%;
+  height: 200px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-box::before {
+  content: attr(data-label);
+  position: absolute;
+  color: #777;
+  font-size: 0.95rem;
+  font-weight:700;
+}
+
+/* Parallax */
+.parallax.image-box { height:360px; }
+.parallax.image-box img { width:100%; height:100%; object-fit:cover; }
+@media (min-width:769px) {
+  .parallax.image-box img { transform:translateZ(0); will-change:transform; }
+}
+
+/* Services grid */
+.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
+.grid-4 .image-box { height:180px; }
+
+/* Testimonials grid */
+.grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+.testimonial { position:relative; display:flex; flex-direction:column; gap:0.5rem; }
+.testimonial .image-box { height:180px; }
+.hover-text { position:absolute; inset:0; background:rgba(0,105,92,0.75); color:#fff; opacity:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:0.75rem; transition:opacity 0.25s; }
+.testimonial:hover .hover-text { opacity:1; }
+@media (max-width:768px) {
+  .hover-text { position:static; background:transparent; color:#333; opacity:1; }
+}
+
+/* Contact grid */
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; text-align:center; }
+.grid-3 .image-box { height:180px; }
+
+/* Map */
+#map .image-box { height:200px; text-align:center; margin-bottom:1rem; }
+
+/* Genève image */
+#geneve .image-box { height:260px; }
+
+/* Footer */
+footer { background:#f9f9f9; text-align:center; padding:2rem; }
+.version { display:block; margin-top:1rem; font-size:0.75rem; color:#999; letter-spacing:0.3px; }
+
+/* Responsive */
+@media (max-width:1024px) {
+  .split { gap:1.25rem; }
+}
+@media (max-width:768px) {
+  .split { flex-direction:column; }
+  .split .image-box { max-width:700px; width:100%; }
+  .grid-4 { grid-template-columns:repeat(2,1fr); }
+  .grid-8 { grid-template-columns:repeat(2,1fr); }
+  .grid-3 { grid-template-columns:1fr; }
+  .main-nav { flex-wrap:wrap; gap:0.75rem; }
+}
