@@ -246,16 +246,17 @@ section { padding:3rem 1.5rem; }
   left: 0;
   width: 100%;
   height: 40%; /* covers lower 40% of image */
-  background: rgba(0,0,0,0.75);
-  color: #fff;
+  background: rgba(255,255,255,0.9); /* white box with slight transparency */
+  color: #000; /* black font */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  font-size: 0.9rem;
+  padding: 0.75rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   text-align: center;
   transition: bottom 0.5s ease;
+  border-top: 2px solid #ddd; /* subtle divider line */
 }
 
 .testimonial:hover .overlay-text {
