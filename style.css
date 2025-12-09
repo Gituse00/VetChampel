@@ -37,7 +37,7 @@ section { padding:4rem 2rem; margin-top:6rem; }
 .centered div { max-width:600px; margin:0 auto; }
 
 /* Parallax */
-.parallax { background-image:url('about.webp'); background-attachment:fixed; background-size:cover; background-position:center; height:400px; }
+.parallax { background-image:url('apropos.webp'); background-attachment:fixed; background-size:cover; background-position:center; height:400px; }
 @media (max-width:768px) { .parallax { background-attachment:scroll; } }
 
 /* 3. Services grid */
@@ -45,19 +45,4 @@ section { padding:4rem 2rem; margin-top:6rem; }
 .grid-4 img { width:100%; border-radius:8px; margin-top:1rem; }
 
 /* 4. Testimonials grid */
-.grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
-.testimonial { position:relative; }
-.testimonial img { width:100%; border-radius:8px; }
-.hover-text { position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,105,92,0.8); color:#fff; opacity:0; display:flex; align-items:center; justify-content:center; transition:opacity 0.3s; }
-.testimonial:hover .hover-text { opacity:1; }
-@media (max-width:768px) {
-  .hover-text { opacity:1; position:static; background:none; color:#333; }
-}
-
-/* 5. Contact grid */
-.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; text-align:center; }
-.grid-3 img { width:100%; border-radius:8px; }
-
-/* 6. Map */
-#map { text-align:center; }
-#map img { width:100%; max-height
+.grid-8 { display:grid; grid-template-columns:repeat(4,1fr
