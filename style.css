@@ -17,7 +17,7 @@ section { padding:3rem 1.5rem; }
 
 /* Split layout (Accueil) */
 .split { display:flex; align-items:center; gap:2rem; }
-.split .image-box { flex:1.2; min-height:320px; background:#f4f4f4; }
+.split .image-box { flex:0 0 65%; max-width:1350px; min-height:320px; background:#f4f4f4; }
 .split .hero-text { flex:1; max-width:520px; }
 
 /* Word cloud */
@@ -61,17 +61,33 @@ section { padding:3rem 1.5rem; }
 }
 
 /* Parallax (À propos image) */
-.parallax.image-box { height:360px; }
-.parallax.image-box img { width:100%; height:100%; object-fit:cover; }
-@media (min-width:769px) {
-  .parallax.image-box img { transform:translateZ(0); will-change:transform; }
+.parallax {
+  background-image: url('apropos.webp'); /* replace with your image */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+  border-radius: 8px;
 }
+.parallax img { display:none; } /* hide inline img, use background instead */
 
 /* Services grid */
-.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
+#services { margin-bottom:3rem; }
+.grid-4 {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2rem;
+  align-items:end; /* align all service boxes at bottom */
+  text-align:center;
+}
 .grid-4 .image-box { height:180px; }
 
 /* Testimonials grid */
+.testimonials-box {
+  background:#f7f5f2; /* light grey/brown tone */
+  padding:2rem;
+  border-radius:8px;
+}
 .grid-8 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
 .testimonial { position:relative; display:flex; flex-direction:column; gap:0.5rem; }
 .testimonial .image-box { height:180px; }
